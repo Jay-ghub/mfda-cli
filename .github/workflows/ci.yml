@@ -52,7 +52,7 @@ jobs:
           pip install .[dev]
           pip install pytest pytest-cov
       - name: Run tests with coverage
-        run: pytest --cov=src --cov-report=term-missing --cov-fail-under=75
+        run: pytest --cov=mfda --cov-report=term-missing --cov-fail-under=75
       - name: Run pre-commit hooks
         run: |
           pip install pre-commit
